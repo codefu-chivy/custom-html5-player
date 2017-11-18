@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+#video-container {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    /*height: 720px;*/
+}
+#controls {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 5px;
+}
+#bottom {
+    display: initial;
+    transition: all .5s;
+    margin-bottom: 5px;
+}
+.fa {
+    color: white;
+}
+.fa-play-circle-o {
+    color: blue;
+}
+.fa-play-circle-o:hover {
+    cursor: pointer;
+}
+#track {
+    width: 100%;
+    height: 20px;
+    background-color: dimgrey;
+}
+#inner-track {
+    width: 0%;
+    height: 20px;
+    background-color: maroon;
+    transition: all .5s;
+}
+.hide {
+    display: none !important;
+}
+#volume-cont, #speed-cont, #skip-cont {
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+}
+#skip-cont {
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    bottom: 3px;
+}
+.fa-play, .fa-pause, .fa-volume-up {
+    text-align: left;
+}
+#lower {
+    float: left;
+    margin-left: 35px;
+}
+.play-control:hover {
+    cursor: pointer;
+}
+video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+video:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    #video-container {
+        width: 90%;
+    }
+}

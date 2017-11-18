@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css"/>
+    <script src="https://use.fontawesome.com/9bc0040d0c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Custom HTML5 Video Player</h1>
+    <div id="video-container">
+      <video id="player" width="1280" height="720" src="./media/videos/pixels.mp4" poster="./media/images/helloladies06.jpg"></video>
+      <div id="controls">
+        <div id="play-icon">
+          
+        </div>
+        <div id="bottom">
+          <div id="track">
+            <div id="inner-track"></div>
+          </div>
+          <div id="lower">
+            <i class="fa fa-play fa-2x play-control" aria-hidden="true"></i>
+            <i class="fa fa-pause hide fa-2x play-control" aria-hidden="true"></i>
+            <div id="volume-cont">
+              <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+              <input type="range" id="volume" min="0" max="100" value="5"/>
+            </div>
+            <div id="speed-cont">
+              <input type="range" id="speed" min="50" max="200" value="100"/>
+            </div>
+            <div id="skip-cont">
+              <span>
+                <i class="fa fa-step-backward fa-1x skip" aria-hidden="true"></i>
+                10s 25s
+                <i class="fa fa-step-forward fa-1x skip" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
